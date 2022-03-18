@@ -15,10 +15,7 @@ const Countries = () => {
         <div>
             <h1>Going to travel different countries: {countries.length}</h1>
             {
-                console.log(countries)
-            }
-            {
-                countries.map(country => <Country name={country.name.common} population={country.population} area={country.area} region={country.region}></Country>)
+                countries.map(country => <Country country={country}></Country>)
             }
         </div>
     );
